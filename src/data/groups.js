@@ -2,11 +2,9 @@ const groups = {
   jeannettes: {
     title: "Jeannettes",
 
-    image: "/images/jeannettes.jpeg",
+    image: "/images/zahrat.jpeg",
 
-    description:
-      "Write a short description about the Jeannettes here. Explain their age group, activities, goals, and what they do in the Scout organization.",
-
+    
     groups: [
       {
         name: "Leaders",
@@ -38,8 +36,7 @@ const groups = {
 
     image: "/images/morshedat2.jpeg",
 
-    description:
-      "Write a short description about the Guides here.",
+    
 
     groups: [
       {
@@ -74,11 +71,9 @@ const groups = {
   rangers: {
     title: "Rangers",
 
-    image: "/images/rangers.jpeg",
+    image: "/images/Ranger.jpeg",
 
-    description:
-      "Write a short description about the Rangers here.",
-
+    
     groups: [
       {
         name: "Group 1",

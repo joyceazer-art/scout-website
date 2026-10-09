@@ -4,7 +4,7 @@ import "./App.css";
 import Leaders from "./Pages/Leaders";
 import GroupPage from "./Pages/GroupPage";
 import ContactUs from "./Pages/ContactUs";
-
+import Achievements from "./Pages/Achievement";
 
 function App() {
 
@@ -80,8 +80,13 @@ function App() {
 
           {/* Our Story */}
 
-          <button>
-            Our Story
+          <button
+            onClick={() => {
+              setPage("achievements");
+              setMenuOpen(false);
+            }}
+          >
+            Achievements
           </button>
 
 
@@ -136,13 +141,13 @@ function App() {
           {/* Contact */}
 
           <button
-  onClick={() => {
-    setPage("contact");
-    setMenuOpen(false);
-  }}
->
-  Contact Us
-</button>
+            onClick={() => {
+              setPage("contact");
+              setMenuOpen(false);
+            }}
+          >
+            Contact Us
+          </button>
 
         </div>
 
@@ -166,7 +171,7 @@ function App() {
           </p>
 
         </div>
-        
+
 
       )}
 
@@ -182,8 +187,12 @@ function App() {
     CONTACT US
     ========================= */}
 
-{page === "contact" && (
-  <ContactUs />
+      {page === "contact" && (
+        <ContactUs />
+      )}
+
+      {page === "achievements" && (
+  <Achievements />
 )}
 
 

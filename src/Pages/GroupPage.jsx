@@ -20,10 +20,7 @@ function GroupPage({ type }) {
         alt={group.title}
       />
 
-      {/* Description */}
-      <div className="group-description">
-        <p>{group.description}</p>
-      </div>
+      
 
       {/* Subgroups */}
       <div className="subgroups">

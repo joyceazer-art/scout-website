@@ -39,21 +39,23 @@ body {
    HOME
    ========================= */
 
+
 .home {
   min-height: 100vh;
-
+  min-height: 100dvh;
   background-image:
     linear-gradient(
       rgba(100, 36, 47, 0.12),
       rgba(100, 36, 47, 0.12)
     ),
-    url("/images/scout-home.jpeg");
+    url("/images/group photo.jpeg");
 
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-color: #252225;
 
   position: relative;
-
   color: var(--white);
 }
 
@@ -190,7 +192,7 @@ body {
 
   width: 0;
   height: 100vh;
-
+  height: 100dvh;
   background: var(--burgundy);
 
   overflow: hidden;
@@ -478,6 +480,18 @@ body {
 
   color: var(--dark);
 }
+.leader-text {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.leader-text p {
+  text-align: start;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--dark);
+  margin: 0 0 18px;
+}
 
 
 /* Back button */
@@ -587,34 +601,7 @@ body {
 }
 
 
-/* =========================
-   GROUP DESCRIPTION
-   ========================= */
 
-.group-description {
-  max-width: 1100px;
-
-  margin: 0 auto 55px;
-
-  background: var(--white);
-
-  padding: 30px 40px;
-
-  border-radius: 15px;
-
-  border-left: 5px solid var(--burgundy);
-
-  box-shadow:
-    0 5px 20px rgba(37, 34, 37, 0.07);
-}
-
-.group-description p {
-  font-size: 18px;
-
-  line-height: 1.8;
-
-  color: var(--dark);
-}
 
 
 /* =========================
@@ -874,24 +861,97 @@ body {
   text-decoration: underline;
 }
 
-
 /* =========================
-   TABLET
+   ACHIEVEMENTS PAGE
    ========================= */
+.achievements-page {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--light-gray);
+  padding: 120px 40px 80px;
+  text-align: center;
+}
 
-/*
+.achievements-page h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--burgundy);
+  margin-bottom: 60px;
+}
+
+.achievements-page h1::after {
+  content: "";
+  display: block;
+  width: 55px;
+  height: 4px;
+  background: var(--red);
+  margin: 15px auto 0;
+  border-radius: 5px;
+} 
+
+.achievements-grid {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;   /* boxes under each other */
+  gap: 30px;
+}
+
+.achievement-card {
+  display: flex;
+  flex-direction: row;      /* picture left, text right */
+  direction: ltr;           /* keeps the picture on the left, even for Arabic text */
+  background: var(--white);
+  border-radius: 18px;
+  overflow: hidden;
+  border-left: 6px solid var(--burgundy);
+  box-shadow: 0 8px 25px rgba(37, 34, 37, 0.08);
+  transition: 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-6px);
+  border-left-color: var(--red);
+  box-shadow: 0 15px 35px rgba(100, 36, 47, 0.16);
+}
+
+.achievement-card img {
+  width: 40%;
+  min-height: 260px;
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0;
+  background: var(--light-gray);
+}
+
+.achievement-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 35px 40px;
+  text-align: start;
+}
+
+.achievement-content h2 {
+  color: var(--burgundy);
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.achievement-content p {
+  color: var(--dark);
+  font-size: 17px;
+  line-height: 1.9;
+  white-space: pre-line;   
+}
+
+
 @media (max-width: 900px) {
 
   .contact-page {
     padding: 90px 30px 60px;
-  }
-
-  .contact-hero {
-    min-height: 400px;
-  }
-
-  .contact-hero-image {
-    height: 400px;
   }
 
   .contact-hero-text {
@@ -899,145 +959,30 @@ body {
   }
 
   .contact-hero-text h1 {
-    font-size: 48px;
+    font-size: 44px;
   }
 
   .contact-grid {
     column-gap: 35px;
   }
+
+  .group-main-image {
+    height: 450px;
+  }
+
+  .leaders-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 
-/* =========================
-   PHONE
-   ========================= */
+/* =========================================================
+   PHONE (768px and below)
+   ========================================================= */
 
 @media (max-width: 768px) {
 
-  .contact-page {
-    padding: 90px 20px 50px;
-  }
-
-
-  /* Hero becomes vertical */
-
-  .contact-hero {
-    display: flex;
-    flex-direction: column;
-
-    min-height: auto;
-
-    margin-bottom: 50px;
-  }
-
-
-  /* Burgundy section */
-
-  .contact-hero-text {
-    padding: 45px 30px;
-
-    min-height: 280px;
-  }
-
-  .contact-hero-text span {
-    font-size: 13px;
-
-    margin-bottom: 18px;
-  }
-
-  .contact-hero-text h1 {
-    font-size: 44px;
-
-    line-height: 1.05;
-  }
-
-
-  /* Photo */
-
-  .contact-hero-image {
-    width: 100%;
-
-    height: auto;
-
-    min-height: 250px;
-  }
-
-  .contact-hero-image-bg {
-    inset: -20px;
-
-    filter: blur(18px) brightness(0.75);
-  }
-
-  .contact-hero-image img {
-    width: 100%;
-    height: auto;
-
-    object-fit: contain;
-  }
-
-
-  /* Information */
-
-  .contact-information h2 {
-    font-size: 32px;
-
-    margin-bottom: 30px;
-  }
-
-
-  /* One column */
-
-  .contact-grid {
-    grid-template-columns: 1fr;
-
-    gap: 30px;
-  }
-
-  .contact-item h3 {
-    font-size: 19px;
-  }
-
-  .contact-item p {
-    font-size: 15px;
-  }
-}
-
-
-/* =========================
-   SMALL PHONES
-   ========================= */
-
-@media (max-width: 450px) {
-
-  .contact-page {
-    padding: 80px 15px 40px;
-  }
-
-  .contact-hero-text {
-    padding: 35px 25px;
-
-    min-height: 240px;
-  }
-
-  .contact-hero-text h1 {
-    font-size: 38px;
-  }
-
-  .contact-information h2 {
-    font-size: 28px;
-  }
-
-  .contact-hero-image {
-    min-height: 220px;
-  }
-}
-/* =========================
-   PHONE
-   ========================= */
-
-@media (max-width: 768px) {
-
-  /* Navbar */
+  /* ---------- Navbar ---------- */
 
   .navbar {
     top: 15px;
@@ -1047,16 +992,28 @@ body {
   .menu-button {
     width: 45px;
     height: 45px;
-
     font-size: 26px;
   }
 
-  .logo img {
-    width: 75px;
+  .first-logo,
+  .second-logo {
+    width: 65px;
   }
 
 
-  /* Home */
+  /* ---------- Home ---------- */
+
+  .home {
+    background-image:
+      linear-gradient(
+        to bottom,
+        rgba(100, 36, 47, 0.1) 40%,
+        rgba(37, 34, 37, 0.75) 100%
+      ),
+      url("/images/puzzle.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
 
   .home-content {
     bottom: 35px;
@@ -1064,17 +1021,17 @@ body {
   }
 
   .home-content h1 {
-    font-size: 36px;
+    font-size: 34px;
     line-height: 1.15;
   }
 
   .home-content p {
-    font-size: 14px;
+    font-size: 13px;
     letter-spacing: 2px;
   }
 
 
-  /* Menu */
+  /* ---------- Side menu ---------- */
 
   .side-menu.open {
     width: 100%;
@@ -1089,7 +1046,7 @@ body {
   }
 
 
-  /* Leaders */
+  /* ---------- Leaders ---------- */
 
   .leaders-page {
     padding: 100px 20px 50px;
@@ -1119,10 +1076,11 @@ body {
   }
 
 
-  /* Leader profile */
+  /* ---------- Leader profile ---------- */
 
   .leader-detail {
     padding: 100px 20px 40px;
+    align-items: flex-start;
   }
 
   .leader-detail-content {
@@ -1139,12 +1097,13 @@ body {
     font-size: 31px;
   }
 
-  .leader-detail-content p {
+  .leader-text p {
     font-size: 16px;
+    line-height: 1.9;
   }
 
 
-  /* Group pages */
+  /* ---------- Group pages ---------- */
 
   .group-page {
     padding: 100px 20px 50px;
@@ -1169,9 +1128,6 @@ body {
     font-size: 16px;
   }
 
-
-  /* Subgroups */
-
   .subgroups {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -1179,5 +1135,163 @@ body {
 
   .subgroup {
     min-height: auto;
+  }
+
+
+  /* ---------- Contact ---------- */
+
+  .contact-page {
+    padding: 90px 20px 50px;
+  }
+
+  .contact-hero {
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+    margin-bottom: 50px;
+  }
+
+  .contact-hero-text {
+    padding: 45px 30px;
+    min-height: 280px;
+  }
+
+  .contact-hero-text span {
+    font-size: 13px;
+    margin-bottom: 18px;
+  }
+
+  .contact-hero-text h1 {
+    font-size: 44px;
+    line-height: 1.05;
+  }
+
+  .contact-hero-image {
+    width: 100%;
+    height: auto;
+    min-height: 250px;
+  }
+
+  .contact-hero-image-bg {
+    inset: -20px;
+    filter: blur(18px) brightness(0.75);
+  }
+
+  .contact-hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .contact-information h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .contact-item h3 {
+    font-size: 19px;
+  }
+
+  .contact-item p {
+    font-size: 15px;
+  }
+}
+
+
+/* =========================================================
+   ACHIEVEMENTS ON PHONES (700px and below)
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  .achievements-page {
+    padding: 100px 20px 50px;
+  }
+
+  .achievements-page h1 {
+    font-size: 38px;
+    margin-bottom: 40px;
+  }
+
+  .achievement-card {
+    flex-direction: column;
+    border-left: none;
+    border-top: 5px solid var(--burgundy);
+  }
+
+  .achievement-card img {
+    width: 100%;
+    height: 220px;
+    min-height: auto;
+  }
+
+  .achievement-content {
+    padding: 25px 20px;
+  }
+
+  .achievement-content h2 {
+    font-size: 24px;
+  }
+}
+
+
+/* =========================================================
+   SMALL PHONES (450px and below)
+   ========================================================= */
+
+@media (max-width: 450px) {
+
+  .home-content h1 {
+    font-size: 28px;
+  }
+
+  .home-content p {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+  }
+
+  .leaders-page > h1,
+  .group-page > h1,
+  .achievements-page h1 {
+    font-size: 32px;
+  }
+
+  .leader-card img {
+    width: 95px;
+    height: 95px;
+  }
+
+  .leader-card h2 {
+    font-size: 15px;
+  }
+
+  .group-main-image {
+    height: 200px;
+  }
+
+  .contact-page {
+    padding: 80px 15px 40px;
+  }
+
+  .contact-hero-text {
+    padding: 35px 25px;
+    min-height: 240px;
+  }
+
+  .contact-hero-text h1 {
+    font-size: 38px;
+  }
+
+  .contact-information h2 {
+    font-size: 28px;
+  }
+
+  .contact-hero-image {
+    min-height: 220px;
   }
 }
