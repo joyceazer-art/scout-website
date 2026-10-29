@@ -75,20 +75,41 @@ const groups = {
 
     
     groups: [
+       {
+        name: "Leaders",
+        members: ["Cheftaine Mavie Youssef","Cheftaine Rita Adel","Cheftaine Mirette Fadel","Cheftaine Karma Hany","Cheftaine Engy Shaker"],
+      },
       {
-        name: "Group 1",
-        members: ["Name 1", "Name 2", "Name 3"],
+        name: "Raht Luce Eterna ",
+        members: ["Sylvia Magdy"],
       },
 
       {
-        name: "Group 2",
-        members: ["Name 4", "Name 5", "Name 6"],
+        name: "Raht Ohana",
+        members: ["Maroska Ossama", "Joyce Azer", "Rinette Hani","Christina Sherif","Tya Magued"],
       },
 
       {
-        name: "Group 3",
-        members: ["Name 7", "Name 8", "Name 9"],
+        name: "Raht Meraki",
+        members: ["Jessica Azer", "Karen Amir", "Natalie Nader"],
       },
+      {
+        name: "Raht Serendipity ",
+        members: ["Joyce Samir", "Carol Choukatly", "Celine Rafik ", "Donata Wagdy","Malak Khalil","Marita Choukatly","Myrna Magued"],
+      },
+      {
+        name: "Raht Avyanna ",
+        members: ["Sara Ayman", "Linda Sherif", "Marize Philip ", "Claudine Samer","Eriny","Magdolina Nabil"],
+      },
+      {
+        name: "Raht New Troop ",
+        members: ["Marina George ", "Kiara Hani", "Kiara Mokbil", "Narden magdy ","Carol Emad"],
+      },
+      {
+        name: "Raht Eloria ",
+        members: ["Mia Remon", "Marly Ramez", "Loren Hani", "Caren Hani ","Clara George","Celine George","Celine Youssef"],
+      },
+
     ],
   },
 };

@@ -77,17 +77,21 @@ function App() {
             Home
           </button>
 
-
-          {/* Our Story */}
+           {/* Leaders */}
 
           <button
             onClick={() => {
-              setPage("achievements");
+              setPage("leaders");
               setMenuOpen(false);
             }}
           >
-            Achievements
+            Ta7any
           </button>
+
+
+         
+
+          
 
 
           {/* Jeannettes */}
@@ -126,15 +130,16 @@ function App() {
           </button>
 
 
-          {/* Leaders */}
+          
 
+          
           <button
             onClick={() => {
-              setPage("leaders");
+              setPage("achievements");
               setMenuOpen(false);
             }}
           >
-            Our Leaders
+            Achievements
           </button>
 
 

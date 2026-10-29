@@ -74,10 +74,7 @@ function ContactUs() {
 
                     
 
-                    <div className="contact-item">
-                        <h3>Email</h3>
-                        <p>your@email.com</p>
-                    </div>
+                    
 
                     
 

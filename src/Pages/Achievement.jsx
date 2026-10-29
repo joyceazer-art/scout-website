@@ -2,21 +2,21 @@ const achievements = [
   {
     id: 1,
     title: "Entelak",
-    image: "/images/achievement1.jpeg",
+    image: "/images/enalak2.jpeg",
     description:
-      "Write a short description about this achievement and what the Scouts accomplished.",
+      'انطلاق شفتلن كرمة',
   },
   {
     id: 2,
     title: "Our Morshedat in Ruah '26",
-    image: "/images/Ro3ah.jpeg",
+    image: "/images/ro3ah2.jpeg",
     description:
       "مشاركة الطليعة العليا للمجموعة السابعة عشرة في معسكر الرعاة 2026، وحصولهم على المركز الرابع في الـ Pre Ruah، ومن أول عشرة مراكز في رعاة.",
   },
   {
     id: 3,
     title: "Sanabel",
-    image: "/images/achievement3.jpeg",
+    image: "/images/sanabal4.jpeg",
     description: `حصول كل من:
 قائدة المرشدات چيسيكا عازر 
 قائدة الزهرات كرستينا شريف

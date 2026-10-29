@@ -48,7 +48,7 @@ body {
       rgba(100, 36, 47, 0.12),
       rgba(100, 36, 47, 0.12)
     ),
-    url("/images/jesspuzzle.jpeg");
+    url("/images/infinity.jpeg");
 
   background-size: cover;
   background-position: center;
@@ -1010,7 +1010,7 @@ body {
         rgba(100, 36, 47, 0.1) 40%,
         rgba(37, 34, 37, 0.75) 100%
       ),
-      url("/images/puzzle.jpeg");
+      url("/images/infinity.jpeg");
     background-size: cover;
     background-position: center;
   }
