@@ -983,6 +983,7 @@ body {
 }
 
 .ad-card {
+  width: 100%;
   max-width: 950px;
   margin: 0 auto;
   padding: 40px 30px 50px;
@@ -1063,6 +1064,32 @@ body {
 .instagram-icon {
   width: 26px;
   height: 26px;
+}
+/* Space between ad cards */
+.ad-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Buttons side by side, wrap on small screens */
+.ad-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icon {
+  width: 26px;
+  height: 26px;
+}
+
+/* Facebook hover color */
+.facebook-link:hover {
+  background: linear-gradient(135deg, #1877f2, #0b5ed7);
+  box-shadow: 0 10px 25px rgba(24, 119, 242, 0.4);
 }
 
 @media (max-width: 768px) {

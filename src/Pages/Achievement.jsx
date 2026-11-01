@@ -31,7 +31,7 @@ const achievements = [
 const celebrations = [
   {
     id: 1,
-    title: "Chantal Alian",
+    title: "Chantal Alain",
     image: "/images/chantal2.jpeg",
     description: "The 17th Group would like to congratulate Cheftaine Sandra Maurice on the arrival of baby Chantal!",
   },

@@ -106,7 +106,7 @@ May your flame of scouting continue to shine brighter, your brotherhood grow str
 Happy 8th Anniversary, 17th Group! 🎉⚜️`},
 
 {
-      id: 6,
+      id: 7,
       name: "13th Group ",
       image: "/images/sgwen13.jpeg",
       description:
@@ -114,7 +114,7 @@ Happy 8th Anniversary, 17th Group! 🎉⚜️`},
 Wishing you many more years of scouting, friendship, and unforgettable memories. ⚜️`},
 
 {
-      id: 7,
+      id: 8,
       name: "Sho3ba Scouts & Guides",
       image: "/images/Leaders/cheframy.jpeg",
       description:
@@ -123,7 +123,7 @@ Wishing you many more years of scouting, friendship, and unforgettable memories.
 ق / رامى هانى 
 `},
 {
-      id: 7,
+      id: 9,
       name: "Cheftaine Monica",
       image: "/images/Leaders/monica.jpeg",
       description:
@@ -136,21 +136,21 @@ Wishing you many more years of scouting, friendship, and unforgettable memories.
 ٨ سنين عدّوا.. والحكاية لسه مكملة! ✨⚜
 `},
 {
-      id: 8,
+      id: 10,
       name: "Chef Ragy Khairy",
       image: "/images/Leaders/user.jpg",
       description:
         `Chef Ragy Khairy and his family congratulate the 17th Group on its 8th anniversary`},
 
   {
-      id: 9,
+      id: 11,
       name: "Chef John Gamal",
       image: "/images/Leaders/user.jpg",
       description:
         `Chef John Gamal and his family congratulate the 17th Group on its 8th anniversary`},
 
         {
-      id: 10,
+      id: 12,
       name: "Cheftaine Sandra Maurice",
       image: "/images/Leaders/sandra.jpeg",
       description:
