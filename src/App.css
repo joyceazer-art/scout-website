@@ -43,31 +43,32 @@ body {
 .home {
   min-height: 100vh;
   min-height: 100dvh;
-  background-image:
-    linear-gradient(
-      rgba(100, 36, 47, 0.12),
-      rgba(100, 36, 47, 0.12)
-    ),
-    url("/images/infinity.jpeg");
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #252225;
-
   position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background-color: #252225;
   color: var(--white);
 }
 
-
-/* Other pages */
-
-.page {
-  min-height: 100vh;
-  position: relative;
+/* Blurred copy fills the whole background */
+.home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/images/infinity.jpeg") center / cover no-repeat;
+  filter: blur(25px) brightness(0.55);
+  transform: scale(1.1);
+  z-index: -1;
 }
 
-
+/* Full photo, never cropped */
+.home::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/images/infinity.jpeg") center / contain no-repeat;
+  z-index: -1;
+}
 /* =========================
    NAVBAR
    ========================= */
@@ -131,7 +132,6 @@ body {
 }
 
 .logo img {
- 
   height: auto;
   mix-blend-mode: multiply;
 }
@@ -946,6 +946,153 @@ body {
   line-height: 1.9;
   white-space: pre-line;   
 }
+.achievement-section {
+  margin-bottom: 70px;
+}
+
+.achievement-section:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================
+   ADVERTISEMENTS PAGE
+   ========================= */
+   .ad-page {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--light-gray);
+  padding: 120px 40px 80px;
+  text-align: center;
+}
+
+.ad-page-title {
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--burgundy);
+  margin-bottom: 60px;
+}
+
+.ad-page-title::after {
+  content: "";
+  display: block;
+  width: 55px;
+  height: 4px;
+  background: var(--red);
+  margin: 15px auto 0;
+  border-radius: 5px;
+}
+
+.ad-card {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 40px 30px 50px;
+  background: var(--white);
+  border-radius: 20px;
+  border-top: 6px solid var(--burgundy);
+  box-shadow: 0 10px 30px rgba(37, 34, 37, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ad-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(37, 34, 37, 0.15);
+}
+
+/* Bigger logo */
+.ad-logo-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.ad-logo {
+  width: 100%;
+  max-width: 700px;
+  height: 420px;
+  object-fit: contain;
+}
+
+/* Title right under the logo */
+.ad-card h2 {
+  color: var(--burgundy);
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.ad-divider {
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--red);
+  border-radius: 5px;
+  margin: 14px 0 30px;
+}
+
+/* Instagram button */
+.instagram-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: linear-gradient(135deg, var(--burgundy), #8a2c3d);
+  color: var(--white);
+  text-decoration: none;
+  padding: 16px 36px;
+  border-radius: 50px;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  box-shadow: 0 6px 18px rgba(107, 30, 46, 0.35);
+  transition: all 0.3s ease;
+}
+
+.instagram-link:hover {
+  background: linear-gradient(45deg, #f09433, #dc2743, #bc1888);
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(220, 39, 67, 0.4);
+}
+
+.instagram-icon {
+  width: 26px;
+  height: 26px;
+}
+
+@media (max-width: 768px) {
+  .ad-card {
+    padding: 30px 20px 40px;
+  }
+
+  .ad-logo {
+    height: 240px;
+  }
+
+  .ad-card h2 {
+    font-size: 28px;
+  }
+
+  .instagram-link {
+    padding: 14px 28px;
+    font-size: 16px;
+  }
+    .ad-page {
+    padding: 100px 20px 50px;
+  }
+
+  .ad-page-title {
+    font-size: 38px;
+    margin-bottom: 40px;
+  }
+}
+
+
 
 
 @media (max-width: 900px) {
@@ -1003,32 +1150,7 @@ body {
 
   /* ---------- Home ---------- */
 
-  .home {
-    background-image:
-      linear-gradient(
-        to bottom,
-        rgba(100, 36, 47, 0.1) 40%,
-        rgba(37, 34, 37, 0.75) 100%
-      ),
-      url("/images/infinity.jpeg");
-    background-size: cover;
-    background-position: center;
-  }
-
-  .home-content {
-    bottom: 35px;
-    padding: 0 20px;
-  }
-
-  .home-content h1 {
-    font-size: 34px;
-    line-height: 1.15;
-  }
-
-  .home-content p {
-    font-size: 13px;
-    letter-spacing: 2px;
-  }
+  
 
 
   /* ---------- Side menu ---------- */

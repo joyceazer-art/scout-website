@@ -5,6 +5,7 @@ import Leaders from "./Pages/Leaders";
 import GroupPage from "./Pages/GroupPage";
 import ContactUs from "./Pages/ContactUs";
 import Achievements from "./Pages/Achievement";
+import Ad from "./Pages/ad";
 
 function App() {
 
@@ -85,7 +86,16 @@ function App() {
               setMenuOpen(false);
             }}
           >
-            Ta7any
+            Messages Of Congratulations
+          </button>
+
+          <button
+            onClick={() => {
+              setPage("ad");
+              setMenuOpen(false);
+            }}
+          >
+            Advertisement
           </button>
 
 
@@ -139,7 +149,7 @@ function App() {
               setMenuOpen(false);
             }}
           >
-            Achievements
+            Achievements & Celebrations
           </button>
 
 
@@ -163,22 +173,7 @@ function App() {
           HOME
           ========================= */}
 
-      {page === "home" && (
-
-        <div className="home-content">
-
-          <h1>
-            One more memory, one more piece
-          </h1>
-
-          <p>
-            Friendship • Adventure • Service
-          </p>
-
-        </div>
-
-
-      )}
+      
 
 
       {/* =========================
@@ -199,6 +194,10 @@ function App() {
       {page === "achievements" && (
   <Achievements />
 )}
+{page === "ad" && (
+  <Ad />
+)}
+
 
 
       {/* =========================

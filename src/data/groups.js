@@ -59,7 +59,7 @@ const groups = {
       },
       {
         name: "Falcon Troop:",
-        members: ["Cp Lilinia George", "Sp Marla Rafik ", "Jolie Maged","Genesis David","Emma George","Celine Samy","Youliana Fady","Madonna Ayman","Perla Remon "],
+        members: ["Cp Lilinia George", "Sp Marla Rafik ", "Jolie Maged","Genesis David","Emma George","Celine Samy","Youliana Fady","Madonna Ayman","Perla Remon ","Eliana Adel"],
       },
       {
         name: "Black Panther Troop: ",

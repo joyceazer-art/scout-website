@@ -6,7 +6,7 @@ function Leaders() {
   const leaders = [
     {
       id: 1,
-      name: "Abouna Nabil",
+      name: "Abouna Tarek",
       image: "/images/Leaders/user.jpg",
       description:
         "Write the leader's paragraph here. This is where you can introduce the leader, talk about their experience in scouting, their role, and anything else they would like people to know about them.",
@@ -44,7 +44,7 @@ function Leaders() {
 
       id: 3,
       name: "Cheftaine Suzi",
-      image: "/images/Leaders/user.jpg",
+      image: "/images/Leaders/suzi4.jpeg",
       lang: "ar",
       description: `عامان مرّا على وجودي في المجموعة السابعة عشر، وهذه هي الحفلة الثانية لي معكم، ومع كل عام يمر أشعر أكثر بمدى سعادتي وفخري بكوني جزءًا من هذه المجموعة.
 
@@ -115,7 +115,7 @@ Wishing you many more years of scouting, friendship, and unforgettable memories.
 
 {
       id: 7,
-      name: "Chef Ramy",
+      name: "Sho3ba Scouts & Guides",
       image: "/images/Leaders/cheframy.jpeg",
       description:
         `أهنئ المجموعة السابعة عشر كشافة ومرشدات وادي النيل على احتفالها بعامها الثامن ⚜️ 
@@ -148,6 +148,21 @@ Wishing you many more years of scouting, friendship, and unforgettable memories.
       image: "/images/Leaders/user.jpg",
       description:
         `Chef John Gamal and his family congratulate the 17th Group on its 8th anniversary`},
+
+        {
+      id: 10,
+      name: "Cheftaine Sandra Maurice",
+      image: "/images/Leaders/sandra.jpeg",
+      description:
+        `بكل الحب والتقدير، أتقدم بخالص التهاني للمجموعة الكشفية السابعة عشرة بمناسبة الحفلة الكشفية السنوية الثامنة.
+
+كل سنة وأنتم رمز للصداقة، والمحبة، والعطاء، وكل سنة وروح الكشافة الجميلة بتجمعنا على الخير والخدمة.
+
+ويسعدني أن أكون جزءًا من هذه الأسرة الكشفية الجميلة، وأن أواصل معكم مسيرة الخدمة والعطاء، التي تجمعنا على قيم المحبة والانتماء والعمل بروح الفريق.
+
+أتمنى لكم حفلة مليانة فرحة وذكريات حلوة، وسنين جاية مليانة نجاح وتميز، ونفضل دايمًا مع بعض، أخوات في الكشافة، تجمعنا روح واحدة ورسالة جميلة.
+
+كل سنة والمجموعة السابعة عشرة بخير، وإلى مزيد من العطاء والنجاح، ونفضل دايمًا مع بعض في طريق الخدمة والمحبة.`},
 
 
   ];
