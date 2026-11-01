@@ -99,7 +99,7 @@ const groups = {
       },
       {
         name: "Raht Avyanna ",
-        members: ["Sara Ayman", "Linda Sherif", "Marize Philip ", "Claudine Samer","Eriny","Magdolina Nabil"],
+        members: ["Sara Ayman", "Linda Sherif", "Marize Philip ", "Claudine Samer","Ereny Botros","Magdolina Nabil"],
       },
       {
         name: "Raht New Troop ",
