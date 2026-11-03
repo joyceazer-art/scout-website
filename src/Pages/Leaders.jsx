@@ -7,9 +7,14 @@ function Leaders() {
     {
       id: 1,
       name: "Abouna Tarek",
-      image: "/images/Leaders/user.jpg",
+      image: "/images/Leaders/abona.jpeg",
       description:
-        "Write the leader's paragraph here. This is where you can introduce the leader, talk about their experience in scouting, their role, and anything else they would like people to know about them.",
+        `" كُلُّ مَا فَعَلْتُمْ، فَٱعْمَلُوا مِنَ ٱلْقَلْبِ، كَمَا لِلرَّبِّ لَيْسَ لِلنَّاسِ، عَالِمِينَ أَنَّكُمْ مِنَ ٱلرَّبِّ سَتَأْخُذُونَ جَزَاءَ ٱلْمِيرَاثِ، لِأَنَّكُمْ تَخْدِمُونَ ٱلرَّبَّ ٱلْمَسِيحَ".
+كُولُوسِّي ٣:‏٢٣-‏٢٤
+
+نهنيء كشافة وادي النيل الفرقة ١٧ سانت ريتا بالإحتفال بالسنة الثامنة لتأسيسها، ولتكن بركة الرب يسوع معكم دوماً، ويده مع يدكم لمستقبل زاهر بالخدمة والعمل في حقل الرب والوطن. 
+
+الأب طارق مشعلاني`
     },
     {
       id: 2,
@@ -170,6 +175,8 @@ Wishing you many more years of scouting, friendship, and unforgettable memories.
       image: "/images/Leaders/10&20.jpeg",
       description:
         `تتقدم المجموعة العاشرة والمجموعة العشرون بخالص التهنئة الي المجموعة السابعة عشر بمناسبة حفلها السنوي و نتمنى لكم المزيد من النجاح الدائم`},
+
+  
 
 
   ];
