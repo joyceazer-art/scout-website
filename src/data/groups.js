@@ -41,7 +41,7 @@ const groups = {
     groups: [
       {
         name: "Leaders",
-        members: ["Cheftaine Jessica Azer ", "Assistante Rinette Hany", "Assistante Tya Magued ","Routière Natalie Nader","Routière Celine Rafik"],
+        members: ["Cheftaine Jessica Azer ", "Assistante Rinette Hany", "Assistante Tya Magued ","Assistante Natalie Nader","Routière Celine Rafik"],
       },
 
       {
