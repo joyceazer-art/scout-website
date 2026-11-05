@@ -150,7 +150,7 @@ Wishing you many more years of scouting, friendship, and unforgettable memories.
   {
       id: 11,
       name: "Chef John Gamal",
-      image: "/images/Leaders/user.jpg",
+      image: "/images/Leaders/john2.jpeg",
       description:
         `Chef John Gamal and his family congratulate the 17th Group on its 8th anniversary`},
 
